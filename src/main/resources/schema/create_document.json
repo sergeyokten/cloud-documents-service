@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "create document",
+  "type": "object",
+  "properties": {
+    "document": {
+      "type": "object",
+      "properties": {
+        "environment": {
+          "type": "string",
+          "pattern": "^.{4,100}$"
+        },
+        "document": {
+          "type": "string"
+        },
+        "alias": {
+          "type": "string",
+          "pattern": "^.{4,100}$"
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "environment",
+        "alias",
+        "document",
+        "created"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "document"
+  ]
+}

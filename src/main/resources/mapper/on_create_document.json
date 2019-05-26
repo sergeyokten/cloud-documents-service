@@ -1,0 +1,14 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "document": {
+        "*": "document.&",
+        "created": [
+          "document.created",
+          "document.updated"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,8 @@
+cloud:
+  service:
+    documents:
+      store:
+        uri: mongodb://localhost:27017
+        database: documents
+        collection:
+          documents: documents
